@@ -1,21 +1,20 @@
 {
+    "extends": "airbnb-base",
     "env": {
-        "browser": true,
-        "es2021": true,
-        "jest": true
-    },
-    "extends": [
-        "airbnb-base"
-    ],
-    "parserOptions": {
-        "ecmaVersion": "latest"
+       "es6": true,
+       "browser": true,
+       "jest": true
     },
     "rules": {
-        "no-restricted-syntax": [
-            "error",
-            "LabeledStatement",
-            "WithStatement"
-        ]
+      "no-restricted-syntax": [
+        "error",
+        "LabeledStatement",
+        "WithStatement"
+      ],
+      "linebreak-style": 0,
+      "consistent-return": [
+        "error", 
+        { "treatUndefinedAsUnspecified": true }
+      ]
     }
-}
-   
+  }
