@@ -5,8 +5,12 @@
         "jest": true
     },
     "extends": [
-        "airbnb-base"
+        "airbnb-base",
+        "eslint:recommended",
+      "plugin:import/errors",
+      "plugin:import/warnings"
     ],
+    "plugins": ["import"],
     "parserOptions": {
         "ecmaVersion": "latest"
     },
@@ -18,3 +22,4 @@
         ]
     }
 }
+git
